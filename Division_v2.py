@@ -1,24 +1,4 @@
 score = 0
-
-
-def instructions():
-
-    #Ask user if they have played before
-    show_instructions = input("Have you played before?").lower()
-
-    #if they say yes, output 'program  contiune'
-    if show_instructions == "yes" or show_instructions == "y":
-        print("Program continues!")
-
-    #if they say No, output 'program  contiune'
-    if show_instructions == "no" or show_instructions == "n":
-        print("Welcome to Zoot's basic maths! You will be learning math in 4 sections, each section has 5 questions. Remeber to have fun! ZOOT ZOOT!")
-
-    #if they say other, output 'Please answer the question'
-    elif show_instructions == "maybe":
-        print("Please answer the question with yes or no!")
-
-
 def divsion():
     print("We will start with the 5 division questions!")
     print("Question One! ")
@@ -62,9 +42,4 @@ def divsion():
         print("Incorrect, good try tho!")
         print("Thats all the division questions, great work!")
 
-
-
-
-
-instructions()
 divsion()
