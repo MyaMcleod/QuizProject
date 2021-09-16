@@ -1,30 +1,29 @@
 score = 0
 
-
 def instructions():
-
-    #Ask user if they have played before
+    # Ask user if they have played before
     show_instructions = input("Have you played before?").lower()
 
-    #if they say yes, output 'program  contiune'
+    # if they say yes, output 'program  contiune'
     if show_instructions == "yes" or show_instructions == "y":
         print("Program continues!")
 
-    #if they say No, output 'program  contiune'
+    # if they say No, output 'program  contiune'
     if show_instructions == "no" or show_instructions == "n":
         print("Welcome to Zoot's basic maths! You will be learning math in 4 sections, each section has 5 questions. Remeber to have fun! ZOOT ZOOT!")
 
-    #if they say other, output 'Please answer the question'
+    # if they say other, output 'Please answer the question'
     elif show_instructions == "maybe":
         print("Please answer the question with yes or no!")
 
 
 def divsion():
+    score = 0
     print("We will start with the 5 division questions!")
     print("Question One! ")
     answer = int(input("What is  4 divided by 2?"))
     if answer == 2:
-        print ("correct!")
+        print("correct!")
         score += 1
     else:
         print("Incorrect, good try tho!")
@@ -32,7 +31,7 @@ def divsion():
     print("Question Two! ")
     answer = int(input("What is  6 divided by 6?"))
     if answer == 1:
-        print ("correct!")
+        print("correct!")
         score += 1
     else:
         print("Incorrect, good try tho!")
@@ -40,7 +39,7 @@ def divsion():
     print("Question Three! ")
     answer = int(input(" What is  8 divided by 2?"))
     if answer == 4:
-        print ("correct!")
+        print("correct!")
         score += 1
     else:
         print("Incorrect, good try tho!")
@@ -48,7 +47,7 @@ def divsion():
     print("Question Four! ")
     answer = int(input(" 10 divided by 2?"))
     if answer == 5:
-        print ("correct!")
+        print("correct!")
         score += 1
     else:
         print("Incorrect, good try tho!")
@@ -56,14 +55,11 @@ def divsion():
     print("Question Five! ")
     answer = int(input(" 20 divided by 1?"))
     if answer == 20:
-        print ("correct!")
+        print("correct!")
         score += 1
     else:
         print("Incorrect, good try tho!")
         print("Thats all the division questions, great work!")
-
-
-
 
 
 instructions()
