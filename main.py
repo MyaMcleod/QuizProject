@@ -1,5 +1,6 @@
 score = 0
 
+
 def instructions():
     # Ask user if they have played before
     show_instructions = input("Have you played before?").lower()
@@ -64,7 +65,7 @@ def divsion():
 
 def times():
     score = 0
-    print("Next we will move on to the Times questions questions!")
+    print("Next we will move on to the Times questions!")
     print("Question One! ")
     answer = int(input("What is 8 times 2?"))
     if answer == 16:
@@ -107,6 +108,52 @@ def times():
         print("Thats all the times questions, great work!")
 
 
+def takeaway():
+    score = 0
+    print("Next we will move on to the take away questions!")
+    print("Question One! ")
+    answer = int(input("What is 8 take away 2?"))
+    if answer == 6:
+        print("correct!")
+        score += 1
+    else:
+        print("Incorrect,good try tho!")
+
+    print("Question Two! ")
+    answer = int(input("What is 5 take away 5?"))
+    if answer == 0:
+        print("correct!")
+        score += 1
+    else:
+        print("Incorrect, good try tho!")
+
+    print("Question Three! ")
+    answer = int(input(" What is 3 take away 4?"))
+    if answer == 0:
+        print("correct!")
+        score += 1
+    else:
+        print("Incorrect, good try tho!")
+
+    print("Question Four! ")
+    answer = int(input(" What is 5 take away 2?"))
+    if answer == 3:
+        print("correct!")
+        score += 1
+    else:
+        print("Incorrect, good try tho!")
+
+    print("Question Five! ")
+    answer = int(input(" What is 4 take away 8?"))
+    if answer == 4:
+        print("correct!")
+        score += 1
+    else:
+        print("Incorrect, good try tho!")
+        print("Thats all the take away questions, great work!")
+
+
 instructions()
 divsion()
 times()
+takeaway()
