@@ -1,6 +1,10 @@
 score = 0
 
 
+def name():
+    name = input("What is your name!")
+
+
 def instructions():
     # Ask user if they have played before
     show_instructions = input("Have you played before?").lower()
@@ -18,7 +22,7 @@ def instructions():
         print("Please answer the question with yes or no!")
 
 
-def divsion():
+def division():
     score = 0
     print("We will start with the 5 division questions!")
     print("Question One! ")
@@ -64,7 +68,6 @@ def divsion():
 
 
 def times():
-    score = 0
     print("Next we will move on to the Times questions!")
     print("Question One! ")
     answer = int(input("What is 8 times 2?"))
@@ -153,7 +156,9 @@ def takeaway():
         print("Thats all the take away questions, great work!")
 
 
+
+name()
 instructions()
-divsion()
+division()
 times()
 takeaway()
