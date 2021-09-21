@@ -1,6 +1,10 @@
 score = 0
 
 
+def name():
+    name = input("What is your name!")
+
+
 def instructions():
     # Ask user if they have played before
     show_instructions = input("Have you played before?").lower()
@@ -18,7 +22,7 @@ def instructions():
         print("Please answer the question with yes or no!")
 
 
-def divsion():
+def division():
     score = 0
     print("We will start with the 5 division questions!")
     print("Question One! ")
@@ -64,7 +68,6 @@ def divsion():
 
 
 def times():
-    score = 0
     print("Next we will move on to the Times questions!")
     print("Question One! ")
     answer = int(input("What is 8 times 2?"))
@@ -153,7 +156,54 @@ def takeaway():
         print("Thats all the take away questions, great work!")
 
 
+def addition():
+    score = 0
+    print("Lastly we will move on to Addition!")
+    print("Question One! ")
+    answer = int(input("What is 7 plus 8?"))
+    if answer == 15:
+        print("correct!")
+        score += 1
+    else:
+        print("Incorrect,good try tho!")
+
+    print("Question Two! ")
+    answer = int(input("What is 5 plus 5?"))
+    if answer == 10:
+        print("correct!")
+        score += 1
+    else:
+        print("Incorrect, good try tho!")
+
+    print("Question Three! ")
+    answer = int(input(" What is 6 plus 4?"))
+    if answer == 10:
+        print("correct!")
+        score += 1
+    else:
+        print("Incorrect, good try tho!")
+
+    print("Question Four! ")
+    answer = int(input(" What is 5 plus 3?"))
+    if answer == 8:
+        print("correct!")
+        score += 1
+    else:
+        print("Incorrect, good try tho!")
+
+    print("Question Five! ")
+    answer = int(input(" What is 4 plus 8?"))
+    if answer == 12:
+        print("correct!")
+        score += 1
+    else:
+        print("Incorrect, good try tho!")
+        print("Thats all the Addition questions, great work!")
+
+
+name()
 instructions()
-divsion()
+division()
 times()
 takeaway()
+addition()

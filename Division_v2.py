@@ -9,6 +9,7 @@ def divsion():
     else:
         print("Incorrect, good try tho!")
 
+
     print("Question Two! ")
     answer = int(input("What is  6 divided by 6?"))
     if answer == 1:
