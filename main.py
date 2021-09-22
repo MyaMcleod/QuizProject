@@ -2,26 +2,39 @@ score = 0
 
 
 def name():
-    name = input("What is your name!")
+    name = input("What is your name? ")
+
+
+def yes_no(question):
+    valid = False
+    while not valid:
+        response = input(question).lower().strip()
+        if response == "yes" or response == "y":
+            response = "yes"
+            return  response
+
+        elif response == "no" or response == "n":
+            response = "No"
+            return response
+        else:
+            print("Please choose yes or no!")
 
 
 def instructions():
+    print("*** How to play ***")
+    print()
+    print("*** Welcome to Zoot's basic maths! "
+          "You will be learning math in 4 sections, each section has 5 questions."
+          " Remeber to have fun! ZOOT ZOOT!***")
+    print()
+    return ""
 
-        #Ask user if they have played before
-    show_instructions = input("Have you played before?").lower()
+play = yes_no("Have you played the game before? ")
 
-    #if they say yes, output 'program  contiune'
-    if show_instructions == "yes" or show_instructions == "y":
-        print("Program continues!")
-
-    #if they say No, output 'program  contiune'
-    if show_instructions == "no" or show_instructions == "n":
-        print("Welcome to Zoot's basic maths! You will be learning math in 4 sections, each section has 5 questions. Remeber to have fun! ZOOT ZOOT!")
-
-    #if they say other, output 'Please answer the question'
-    elif show_instructions == "maybe":
-        print("Please answer the question with yes or no!")
-
+if play == "no" or play == "n" or play == "No":
+        instructions()
+else:
+    print("*** Game starting ***")
 
 def division():
     print("We will start with the 5 division questions!")
