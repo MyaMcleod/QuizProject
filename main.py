@@ -6,24 +6,24 @@ def name():
 
 
 def instructions():
-    # Ask user if they have played before
+
+        #Ask user if they have played before
     show_instructions = input("Have you played before?").lower()
 
-    # if they say yes, output 'program  contiune'
+    #if they say yes, output 'program  contiune'
     if show_instructions == "yes" or show_instructions == "y":
         print("Program continues!")
 
-    # if they say No, output 'program  contiune'
+    #if they say No, output 'program  contiune'
     if show_instructions == "no" or show_instructions == "n":
         print("Welcome to Zoot's basic maths! You will be learning math in 4 sections, each section has 5 questions. Remeber to have fun! ZOOT ZOOT!")
 
-    # if they say other, output 'Please answer the question'
+    #if they say other, output 'Please answer the question'
     elif show_instructions == "maybe":
         print("Please answer the question with yes or no!")
 
 
 def division():
-    score = 0
     print("We will start with the 5 division questions!")
     print("Question One! ")
     answer = int(input("What is  4 divided by 2?"))
@@ -199,6 +199,10 @@ def addition():
     else:
         print("Incorrect, good try tho!")
         print("Thats all the Addition questions, great work!")
+
+
+def score():
+    score
 
 
 name()

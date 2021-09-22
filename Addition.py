@@ -44,3 +44,6 @@ def addition():
     else:
         print("Incorrect, good try tho!")
         print("Thats all the Addition questions, great work!")
+
+
+addition()
