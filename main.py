@@ -1,4 +1,3 @@
-score = 0
 
 
 def name():
@@ -21,22 +20,26 @@ def yes_no(question):
 
 
 def instructions():
-    print("*** How to play ***")
+    print("*** How to play *** ")
     print()
     print("*** Welcome to Zoot's basic maths! "
-          "You will be learning math in 4 sections, each section has 5 questions."
-          " Remeber to have fun! ZOOT ZOOT!***")
+          "You will be learning math in 4 sections, each section has 5 questions. "
+          "Remember to have fun! ZOOT ZOOT!*** ")
     print()
     return ""
 
-play = yes_no("Have you played the game before? ")
 
-if play == "no" or play == "n" or play == "No":
-        instructions()
+play = yes_no("Have you played the game before? ")
+play = play.strip().lower()
+
+if play == "no" or play == "n":
+    instructions()
+
 else:
     print("*** Game starting ***")
 
-def division():
+
+def division(score=0):
     print("We will start with the 5 division questions!")
     print("Question One! ")
     answer = int(input("What is  4 divided by 2?"))
@@ -77,7 +80,7 @@ def division():
         score += 1
     else:
         print("Incorrect, good try tho!")
-        print("Thats all the division questions, great work!")
+        print("That's all the division questions, great work!")
 
 
 def times():
@@ -121,7 +124,7 @@ def times():
         score += 1
     else:
         print("Incorrect, good try tho!")
-        print("Thats all the times questions, great work!")
+        print("That's all the times questions, great work!")
 
 
 def takeaway():
@@ -166,7 +169,7 @@ def takeaway():
         score += 1
     else:
         print("Incorrect, good try tho!")
-        print("Thats all the take away questions, great work!")
+        print("That's all the take away questions, great work!")
 
 
 def addition():
@@ -211,11 +214,33 @@ def addition():
         score += 1
     else:
         print("Incorrect, good try tho!")
-        print("Thats all the Addition questions, great work!")
+        print("That's all the Addition questions, great work!")
 
 
 def score():
-    score
+    if score >= 0 <= 5:
+        print("Good try!{}".format(name))
+        print("But you could improve a little more!")
+        print("You scored {} out of 20".format(score))
+    elif score >= 5 <= 10:
+        print("Good try!{}".format(name))
+        print("You are are so close to half way!")
+        print("You scored {} out of 20".format(score))
+
+    elif score >= 10 <= 15:
+        print("Good try!{}".format(name))
+        print("You almost got them all correct!")
+        print("You scored {} out of 20".format(score))
+
+    elif score >= 15 <= 20:
+        print("Good try!{}".format(name))
+        print("You almost got them all correct!")
+        print("You scored {} out of 20".format(score))
+
+    elif score == 20:
+        print("Good try!{}".format(name))
+        print("You almost got them all correct!")
+        print("You scored {} out of 20".format(score))
 
 
 name()
