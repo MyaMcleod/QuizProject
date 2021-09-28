@@ -1,10 +1,12 @@
 
 
 def name():
-    name = input("What is your name? ")
+# *** Ask for player name ***
+    player = input("What is your name? ")
 
 
 def yes_no(question):
+# *** Ask user if played before ***
     valid = False
     while not valid:
         response = input(question).lower().strip()
@@ -20,6 +22,7 @@ def yes_no(question):
 
 
 def instructions():
+# *** Game Instructions ***
     print("*** How to play *** ")
     print()
     print("*** Welcome to Zoot's basic maths! "
@@ -29,17 +32,8 @@ def instructions():
     return ""
 
 
-play = yes_no("Have you played the game before? ")
-play = play.strip().lower()
-
-if play == "no" or play == "n":
-    instructions()
-
-else:
-    print("*** Game starting ***")
-
-
 def division(score=0):
+# *** Divison Questions ***
     print("We will start with the 5 division questions!")
     print("Question One! ")
     answer = int(input("What is  4 divided by 2?"))
@@ -84,6 +78,7 @@ def division(score=0):
 
 
 def times():
+# *** Times Questions ***
     print("Next we will move on to the Times questions!")
     print("Question One! ")
     answer = int(input("What is 8 times 2?"))
@@ -128,6 +123,7 @@ def times():
 
 
 def takeaway():
+# *** Takeaway Questions ***
     score = 0
     print("Next we will move on to the take away questions!")
     print("Question One! ")
@@ -173,6 +169,7 @@ def takeaway():
 
 
 def addition():
+# *** addition Questions ***
     score = 0
     print("Lastly we will move on to Addition!")
     print("Question One! ")
@@ -218,6 +215,7 @@ def addition():
 
 
 def score():
+# *** Score Results ***
     if score >= 0 <= 5:
         print("Good try!{}".format(name))
         print("But you could improve a little more!")
@@ -243,9 +241,25 @@ def score():
         print("You scored {} out of 20".format(score))
 
 
+
+# **** Main Routine *****
+play = yes_no("Have you played the game before? ")
+play = play.strip().lower()
+
+if play == "no" or play == "n":
+    instructions()
+
+else:
+    print("*** Game starting ***")
+
+# *** Calling the functions in order ***
 name()
 instructions()
 division()
 times()
 takeaway()
 addition()
+
+# *** Completed **
+print(" *** You have completed the quiz!"
+      "Congratulations {}! *** ".format(player))
