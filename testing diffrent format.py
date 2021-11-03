@@ -1,8 +1,7 @@
-
-
 def name():
 # *** Ask for player name ***
     player = input("What is your name? ")
+    return player
 
 
 def yes_no(question):
@@ -12,7 +11,7 @@ def yes_no(question):
         response = input(question).lower().strip()
         if response == "yes" or response == "y":
             response = "yes"
-            return  response
+            return response
 
         elif response == "no" or response == "n":
             response = "No"
@@ -34,10 +33,10 @@ def instructions():
 
 def division(score=0):
 # *** Divison Questions ***
-        print("We will start with the 5 division questions!")
-Question = ["What is  4 divided by 2?","What is  6 divided by 6?"," What is  8 divided by 2?"," 10 divided by 2?",
-             "20 divided by 1?"]
-Answer = ["2","1","4","5","20"]
+    print("We will start with the 5 division questions!")
+    Question = ["What is  4 divided by 2?","What is  6 divided by 6?"," What is  8 divided by 2?"," 10 divided by 2?",
+                 "20 divided by 1?"]
+    Answer = ["2","1","4","5","20"]
 
 question_num = 0
 for i in Question:
@@ -46,96 +45,38 @@ for i in Question:
         print("correct")
         question_num += 1
 
+def times(score=question_num):
+# *** times Questions ***
+        print("We will move onto times questions!")
+Question = ["What is 8 times 2?","What is  5 times 5?"," What is 3 times 4??"," What is 5 times 2?",
+             "What is 4 times 8?"]
+Answer = ["16","25","6","10","32"]
 
-def times():
-# *** Times Questions ***
-    print("Next we will move on to the Times questions!")
-    print("Question One! ")
-    answer = int(input("What is 8 times 2?"))
-    if answer == 16:
-        print("correct!")
-        score += 1
+question_num = 0
+for i in Question:
+    answer_input = input(Question[question_num])
+    if answer_input == Answer[question_num]:
+        print("correct")
+        question_num += 1
     else:
-        print("Incorrect,good try tho!")
+        print("Incorrect")
 
-    print("Question Two! ")
-    answer = int(input("What is  5 times 5?"))
-    if answer == 25:
-        print("correct!")
-        score += 1
+
+def takeaway(score=question_num):
+# *** takeaway Questions ***
+        print("We will move onto takeaway questions!")
+Question = [" What is 8 take away 2?"," What is 5 take away 5?"," What is 3 take away 4?"," What is 5 take away 2?",
+             " What is 4 take away 8?"]
+Answer = ["6","0","0","3","4"]
+
+question_num = 0
+for i in Question:
+    answer_input = input(Question[question_num])
+    if answer_input == Answer[question_num]:
+        print("correct")
+        question_num += 1
     else:
-        print("Incorrect, good try tho!")
-
-    print("Question Three! ")
-    answer = int(input(" What is 3 times 4?"))
-    if answer == 6:
-        print("correct!")
-        score += 1
-    else:
-        print("Incorrect, good try tho!")
-
-    print("Question Four! ")
-    answer = int(input(" What is 5 times 2?"))
-    if answer == 10:
-        print("correct!")
-        score += 1
-    else:
-        print("Incorrect, good try tho!")
-
-    print("Question Five! ")
-    answer = int(input(" What is 4 times 8?"))
-    if answer == 32:
-        print("correct!")
-        score += 1
-    else:
-        print("Incorrect, good try tho!")
-        print("That's all the times questions, great work!")
-
-
-def takeaway():
-# *** Takeaway Questions ***
-    score = 0
-    print("Next we will move on to the take away questions!")
-    print("Question One! ")
-    answer = int(input("What is 8 take away 2?"))
-    if answer == 6:
-        print("correct!")
-        score += 1
-    else:
-        print("Incorrect,good try tho!")
-
-    print("Question Two! ")
-    answer = int(input("What is 5 take away 5?"))
-    if answer == 0:
-        print("correct!")
-        score += 1
-    else:
-        print("Incorrect, good try tho!")
-
-    print("Question Three! ")
-    answer = int(input(" What is 3 take away 4?"))
-    if answer == 0:
-        print("correct!")
-        score += 1
-    else:
-        print("Incorrect, good try tho!")
-
-    print("Question Four! ")
-    answer = int(input(" What is 5 take away 2?"))
-    if answer == 3:
-        print("correct!")
-        score += 1
-    else:
-        print("Incorrect, good try tho!")
-
-    print("Question Five! ")
-    answer = int(input(" What is 4 take away 8?"))
-    if answer == 4:
-        print("correct!")
-        score += 1
-    else:
-        print("Incorrect, good try tho!")
-        print("That's all the take away questions, great work!")
+        print("Incorrect")
 
 
 def addition():
