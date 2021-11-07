@@ -1,5 +1,6 @@
 score = 0
 
+
 # *** Ask for player name ***
 player = input("*** What is your name? ***")
 
@@ -31,44 +32,45 @@ def instructions():
     return ""
 
 
-def division(score=0):
+def division():
+    global score
     # *** Divison Questions ***
     print("*** We will start with the 5 division questions! ***")
     print("*** Question One! ***")
-    answer = int(input("*** What is  4 divided by 2? ***"))
-    if answer == 2:
+    answer = input("*** What is  4 divided by 2? *** ")
+    if answer == "2":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect, good try tho! ***")
 
     print("*** Question Two! ***")
-    answer = int(input("*** What is  6 divided by 6? ***"))
-    if answer == 1:
+    answer = input("*** What is  6 divided by 6? ***")
+    if answer == "1":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect, good try tho! ***")
 
     print("*** Question Three! ***")
-    answer = int(input("*** What is  8 divided by 2? ***"))
-    if answer == 4:
+    answer = input("*** What is  8 divided by 2? ***")
+    if answer == "4":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect, good try tho! ***")
 
     print("*** Question Four! ***")
-    answer = int(input("*** 10 divided by 2? ***"))
-    if answer == 5:
+    answer = input("*** 10 divided by 2? ***")
+    if answer == "5":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect, good try tho! ***")
 
     print("*** Question Five! ***")
-    answer = int(input("*** 20 divided by 1? ***"))
-    if answer == 20:
+    answer = input("*** 20 divided by 1? ***")
+    if answer == "20":
         print("*** correct! ***")
         score += 1
     else:
@@ -77,44 +79,44 @@ def division(score=0):
 
 
 def times():
-    # *** Times Questions ***
     global score
+    # *** Times Questions ***
     print("*** Next we will move on to the Times questions! ***")
     print("*** Question One! ***")
-    answer = int(input("*** What is 8 times 2? ***"))
-    if answer == 16:
+    answer = input("*** What is 8 times 2? ***")
+    if answer == "16":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect,good try tho! ***")
 
     print("*** Question Two! ***")
-    answer = int(input("*** What is  5 times 5? ***"))
-    if answer == 25:
+    answer = input("*** What is  5 times 5? ***")
+    if answer == "25":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect, good try tho! ***")
 
     print("*** Question Three! ***")
-    answer = int(input("*** What is 3 times 4? ***"))
-    if answer == 6:
+    answer = input("*** What is 3 times 4? ***")
+    if answer == "6":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect, good try tho! ***")
 
     print("Question Four! ")
-    answer = int(input("*** What is 5 times 2? ***"))
-    if answer == 10:
+    answer = input("*** What is 5 times 2? ***")
+    if answer == "10":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect, good try tho! ***")
 
     print("*** Question Five! ***")
-    answer = int(input("*** What is 4 times 8? ***"))
-    if answer == 32:
+    answer = input("*** What is 4 times 8? ***")
+    if answer == "32":
         print("*** correct! ***")
         score += 1
     else:
@@ -123,44 +125,44 @@ def times():
 
 
 def takeaway():
+    global score
     # *** Takeaway Questions ***
-    score = 0
     print("*** Next we will move on to the take away questions! ***")
     print("*** Question One! ***")
-    answer = int(input("*** What is 8 take away 2? ***"))
-    if answer == 6:
+    answer = input("*** What is 8 take away 2? ***")
+    if answer == "6":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect,good try tho! ***")
 
     print("*** Question Two! ***")
-    answer = int(input("*** What is 5 take away 5? ***"))
-    if answer == 0:
+    answer = input("*** What is 5 take away 5? ***")
+    if answer == "0":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect, good try tho! ***")
 
     print("*** Question Three! ***")
-    answer = int(input("*** What is 3 take away 4? ***"))
-    if answer == 0:
+    answer = input("*** What is 3 take away 4? ***")
+    if answer == "0":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect, good try tho! ***")
 
     print("*** Question Four! ***")
-    answer = int(input("*** What is 5 take away 2? ***"))
-    if answer == 3:
+    answer = input("*** What is 5 take away 2? ***")
+    if answer == "3":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect, good try tho! ***")
 
     print("*** Question Five! ***")
-    answer = int(input("*** What is 4 take away 8? ***"))
-    if answer == 4:
+    answer = input("*** What is 4 take away 8? ***")
+    if answer == "4":
         print("*** correct! ***")
         score += 1
     else:
@@ -169,44 +171,44 @@ def takeaway():
 
 
 def addition():
+    global score
     # *** addition Questions ***
-    score = 0
     print("*** Lastly we will move on to Addition! ***")
     print("*** Question One! ***")
-    answer = int(input("*** What is 7 plus 8? ***"))
-    if answer == 15:
+    answer = input("*** What is 7 plus 8? ***")
+    if answer == "15":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect,good try tho! ***")
 
     print("*** Question Two! ***")
-    answer = int(input("What is 5 plus 5?"))
-    if answer == 10:
+    answer = input("What is 5 plus 5?")
+    if answer == "10":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect, good try tho! ***")
 
     print("*** Question Three! ***")
-    answer = int(input("*** What is 6 plus 4? ***"))
-    if answer == 10:
+    answer = input("*** What is 6 plus 4? ***")
+    if answer == "10":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect, good try tho! ***")
 
     print("*** Question Four! ***")
-    answer = int(input("*** What is 5 plus 3? ***"))
-    if answer == 8:
+    answer = input("*** What is 5 plus 3? ***")
+    if answer == "8":
         print("*** correct! ***")
         score += 1
     else:
         print("*** Incorrect, good try tho! ***")
 
     print("*** Question Five! ***")
-    answer = int(input("*** What is 4 plus 8? ***"))
-    if answer == 12:
+    answer = input("*** What is 4 plus 8? ***")
+    if answer == "12":
         print("*** correct! ***")
         score += 1
     else:
@@ -233,32 +235,30 @@ takeaway()
 addition()
 
 # *** Completed **
-print(" *** You have completed the quiz!"
+print(" *** You have completed the quiz! "
       "Congratulations {}! *** ".format(player))
 
+ # *** Score Results ***
+if score < 5:
+    print("*** Good try!{} ***".format(player))
+    print("*** But you could improve a little more! ***")
+    print("*** You scored {} out of 20 ***".format(score))
+elif score >= 5 <= 10:
+    print("*** Good try!{} ***".format(player))
+    print("*** You are are so close to half way! ***")
+    print("*** You scored {} out of 20 ***".format(score))
 
-def score():
-    # *** Score Results ***
-    if score >= 0 <= 5:
-        print("*** Good try!{} ***".format(name))
-        print("*** But you could improve a little more! ***")
-        print("*** You scored {} out of 20 ***".format(score))
-    elif score >= 5 <= 10:
-        print("*** Good try!{} ***".format(name))
-        print("*** You are are so close to half way! ***")
-        print("*** You scored {} out of 20 ***".format(score))
+elif score >= 10 <= 15:
+    print("*** Good try!{} ***".format(player))
+    print("*** You almost got them all correct! ***")
+    print("*** You scored {} out of 20 ***".format(score))
 
-    elif score >= 10 <= 15:
-        print("*** Good try!{} ***".format(name))
-        print("*** You almost got them all correct! ***")
-        print("*** You scored {} out of 20 ***".format(score))
+elif score >= 15 <= 20:
+    print("*** Good try!{} ***".format(player))
+    print("*** You almost got them all correct! ***")
+    print("*** You scored {} out of 20 ***".format(score))
 
-    elif score >= 15 <= 20:
-        print("*** Good try!{} ***".format(name))
-        print("*** You almost got them all correct! ***")
-        print("*** You scored {} out of 20 ***".format(score))
-
-    elif score == 20:
-        print("*** Good try!{} ***".format(name))
-        print("*** You almost got them all correct! ***")
-        print("*** You scored {} out of 20 ***".format(score))
+elif score == 20:
+    print("*** Good try!{} ***".format(player))
+    print("*** You almost got them all correct! ***")
+    print("*** You scored {} out of 20 ***".format(score))
